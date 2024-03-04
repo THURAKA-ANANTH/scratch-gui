@@ -17,6 +17,13 @@ const motion = function (isInitialSetup, isStage, targetId, colors) {
         ${isStage ? `
         <label text="${stageSelected}"></label>
         ` : `
+        '<block type="motion_setheading" id="motion_setheading">'
+        '<value name="ANGLE">'
+          '<shadow type="math_number">'
+            '<field name="NUM">10</field>'
+          '</shadow>'
+        '</value>' +
+      '</block>' +
         <block type="motion_movesteps">
             <value name="STEPS">
                 <shadow type="math_number">
